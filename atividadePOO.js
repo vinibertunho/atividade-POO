@@ -37,14 +37,14 @@ class Mago extends Personagem {
     }
 
     atacar(inimigo) {
-        let danoTotal = this.poderDeAtaque + this.magia * 2;
+        const danoTotal = this.poderDeAtaque + this.magia * 3;
         console.log(`🔥 ${this.nome} lançou uma bola de fogo!`);
         inimigo.receberDano(danoTotal);
     }
 }
 
-const heroi = new Guerreiro('Batman', 10, 5);
-const vilao = new Mago('Coringa', 5, 8);
+const heroi = new Guerreiro('Batman', 30, 25);
+const vilao = new Mago('Coringa', 9, 8);
 
 heroi.exibirStatus();
 vilao.exibirStatus();
